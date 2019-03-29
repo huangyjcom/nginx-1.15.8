@@ -91,7 +91,7 @@ static ngx_int_t ngx_http_hello_world_handler(ngx_http_request_t* r) {
 
 	if (r->headers_in.referer == NULL) {
 		out[1].next = NULL;
-		b->last_buf = 1;
+		b->last_buf = 1;//last buf
 	} else {
 		b = ngx_pcalloc(r->pool, sizeof(ngx_buf_t));
 		out[2].buf = b;
@@ -99,7 +99,7 @@ static ngx_int_t ngx_http_hello_world_handler(ngx_http_request_t* r) {
 		b->pos = r->headers_in.referer->value.data;
 	    b->last = r->headers_in.referer->value.data + (r->headers_in.referer->value.len);
 	    b->memory = 1;
-		b->last_buf = 1;
+		b->last_buf = 1;//last buf
 		content_length += r->headers_in.referer->value.len;
 	}
 
