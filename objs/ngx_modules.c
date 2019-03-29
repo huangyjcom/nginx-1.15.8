@@ -136,7 +136,7 @@ ngx_module_t *ngx_modules[] = {
     &ngx_http_userid_filter_module,			/* 支持添加统计用的识别用户的cookie */
     &ngx_http_headers_filter_module,		/* 支持设置expire和Cache-control头，支持添加任意名称的头 */
     // 第三方filter模块start
-    &ngx_http_hello_filter_module,			/* 第三方filter模块*/
+    &ngx_http_hello_filter_module,			/* 存放第三方filter模块*/
     // 第三方filter模块end
     &ngx_http_copy_filter_module,			/* 根据需求重新复制输出链表中的某些节点
                                               （比如将in_file的节点从文件读出并复制到新的节点），并交给后续filter
