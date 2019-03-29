@@ -1,4 +1,4 @@
-//ngx_http.c
+//ngx_http.c code
 /*
  * Copyright (C) Igor Sysoev
  * Copyright (C) Nginx, Inc.
